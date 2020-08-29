@@ -201,6 +201,7 @@ resource "aws_codebuild_project" "default" {
   }
 
   artifacts {
+    namespace_type = null
     type = var.artifact_type
   }
 
