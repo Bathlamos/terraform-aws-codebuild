@@ -136,9 +136,7 @@ data "aws_iam_policy_document" "permissions" {
       "logs:CreateLogStream",
       "logs:PutLogEvents",
       "ssm:GetParameters",
-      "ec2:DescribeSecurityGroups",
-      "ec2:DescribeSubnets",
-      "ec2:DescribeNetworkInterfaces",
+      "ec2:*",
       "secretsmanager:GetSecretValue",
     ], var.extra_permissions))
 
